@@ -17,7 +17,7 @@
     <PackageReference Include="Ardalis.ListStartupServices" Version="1.1.4" />
     <PackageReference Include="Ardalis.Specification" Version="6.1.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-    <PackageReference Include="Elastic.Apm" Version="1.18.0" />
+    <PackageReference Include="Elastic.Apm" Version="1.31.0" />
     <PackageReference Include="Elastic.Apm.NetCoreAll" Version="1.17.0" />
     <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
