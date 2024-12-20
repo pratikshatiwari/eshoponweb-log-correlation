@@ -3,6 +3,7 @@
  * @description Detects potential duplicated code in C# projects.
  * @kind problem
  * @tags maintainability
+ * @id ID
  */
 
 import csharp
