@@ -27,18 +27,16 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: csharp
-        queries: ./queries/
+        queries: ./custom-queries/
 
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
-
+    
     - name: Run CodeQL analysis
       run: |
         # Create a CodeQL database for C# code
         codeql database create csharp-db --language=csharp --source-root=$GITHUB_WORKSPACE
 
         # Run the custom query to scan for duplications
-        codeql query run --database=csharp-db custom-queries/Duplications.ql --format=sarif-latest --output=results.sarif
+        codeql query run --database=csharp-db custom-queries/duplication.ql --format=sarif-latest --output=results.sarif
 
         # Upload the SARIF file for Code Scanning
         mv results.sarif $GITHUB_WORKSPACE
