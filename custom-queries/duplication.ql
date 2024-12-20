@@ -7,5 +7,6 @@
 
 import csharp
 
-from Stmt::BlockStmt block
-select block, block.getLocation().getStartLine()
+from Method m, BlockStmt block
+where block.getParent() = m
+select m, "Method has a block statement."
