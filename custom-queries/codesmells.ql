@@ -5,7 +5,7 @@
  * @id custom.codesmells
  * @problem.severity warning
  * @tags maintainability
- * @id ID
+ * @id cs/codesmell
  */
 
 import csharp
