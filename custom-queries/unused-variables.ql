@@ -4,7 +4,9 @@ import csharp
  * Find local variables that are declared but never used.
  * id cs/unused-variables
  */
-from LocalVariable var
+
+from UsingDirective usingDir
 where
-  not exists (DataFlow::VariableAccess va | va.getVariable() = var)
-select var, "The variable '" + var.getName() + "' is declared but never used."
+  not exists (usingDir.getAScopeAccess())
+select usingDir, "The namespace '" + usingDir.getNamespaceName() + "' is imported but never used."
+
