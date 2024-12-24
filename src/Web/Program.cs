@@ -18,6 +18,7 @@ using Microsoft.eShopWeb.Web.Configuration;
 using Microsoft.eShopWeb.Web.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using NuGet.Configuration;
+﻿using ElasticSearch.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
