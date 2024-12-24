@@ -1,12 +1,7 @@
-import csharp
-
 /**
  * Find local variables that are declared but never used.
- * id cs/unused-variables
  */
-
-from UsingDirective usingDir
+from LocalVariable var
 where
-  not exists (usingDir.getAScopeAccess())
-select usingDir, "The namespace '" + usingDir.getNamespaceName() + "' is imported but never used."
-
+  not exists (var.getAnAccess())
+select var, "The variable '" + var.getName() + "' is declared but never used."
