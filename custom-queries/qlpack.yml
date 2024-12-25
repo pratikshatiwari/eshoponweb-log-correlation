@@ -1,5 +1,4 @@
 name: custom-csharp-queries
 version: 1.0.0
-libraryPathDependencies: codeql-csharp
 dependencies:
   codeql/csharp-all: "*"
