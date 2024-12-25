@@ -1,6 +1,7 @@
 // Unused namespaces
 using System.Text;
 using System.Net;
+using Elastic.Apm;
 
 // Used namespaces
 using System;
