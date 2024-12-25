@@ -2,6 +2,7 @@
 using System.Text;
 using System.Net;
 using Elastic.Apm;
+﻿using Elastic.Apm.NetCoreAll;
 
 // Used namespaces
 using System;
